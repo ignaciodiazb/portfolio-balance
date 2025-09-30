@@ -35,6 +35,7 @@ gem "thruster", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
+# HTTP client library, used to interact with external APIs
 gem "httparty"
 
 group :development, :test do
@@ -46,4 +47,9 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+end
+
+group :test do
+  # Mocking and stubbing library for tests
+  gem "mocha"
 end

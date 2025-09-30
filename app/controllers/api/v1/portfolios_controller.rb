@@ -1,4 +1,6 @@
 class Api::V1::PortfoliosController < ApplicationController
+  # Disable Rails parameter wrapping to prevent automatic nesting
+  # (avoids portfolio: {fiat_currency: "CLP"} when sending only fiat_currency)
   wrap_parameters false
 
   def balance

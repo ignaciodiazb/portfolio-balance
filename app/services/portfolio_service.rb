@@ -1,3 +1,5 @@
+# Calculates cryptocurrency portfolio balance using Buda.com API
+# Assumptions: missing market data non-fatal, zero quantities included
 class PortfolioService
   def initialize(portfolio)
     @buda_client = BudaApiClient.new

@@ -1,3 +1,5 @@
+# Validates portfolio balance API request parameters
+# Assumptions: empty portfolios are valid, only CLP/PEN/COP supported
 class PortfolioValidator
   SUPPORTED_CURRENCIES = %w[CLP PEN COP].freeze
 
